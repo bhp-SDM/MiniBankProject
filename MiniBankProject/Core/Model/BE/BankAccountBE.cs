@@ -15,7 +15,7 @@ namespace MiniBank.Core.Model.BE
         public BankAccountBE(BankAccount acc)
         {
             AccountNumber = acc.AccountNumber;
-            Balance = acc.Balance;
+            //Balance = acc.Balance;
             InterestRate = acc.InterestRate;
             Customers = new List<CustomerBE>();
             foreach (Customer c in acc.Customers)
