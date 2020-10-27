@@ -38,21 +38,21 @@ namespace XUnitTestProject
             Assert.Empty(accounts);
         }
 
-        [Fact]
-        public void AddValidBankAccount()
-        {
-            IBankAccountController bac = new BankAccountController(accountsRepoMock.Object);
-            Customer customer = new Customer() 
-            {
-                Id = 1,
-                Name = "Test",
-                Address = "Test Road 11",
-                ZipCode = 1234,
-                City = "Test City",
-                Email = "test@test.dk",
-                Phone = "12345678",
-                Accounts = new List<BankAccount>()
-            };
+        //[Fact]
+        //public void AddValidBankAccount()
+        //{
+        //    IBankAccountController bac = new BankAccountController(accountsRepoMock.Object);
+        //    Customer customer = new Customer() 
+        //    {
+        //        Id = 1,
+        //        Name = "Test",
+        //        Address = "Test Road 11",
+        //        ZipCode = 1234,
+        //        City = "Test City",
+        //        Email = "test@test.dk",
+        //        Phone = "12345678",
+        //        Accounts = new List<BankAccount>()
+        //    };
 
             CustomerBE customerBE = new CustomerBE(customer);
 
